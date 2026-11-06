@@ -8,6 +8,7 @@ const signupRoute = require('./routes/signup');
 const loginRoute = require('./routes/login');
 const fortuneRoute = require('./routes/fortune');
 // const profileRoutes = require('./routes/profile');
+const userRoutes = require('./routes/userRoutes')
 
 const app = express();
 
@@ -27,6 +28,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use('/api', signupRoute);
 app.use('/api', loginRoute);
 app.use('/api', fortuneRoute)
+app.use('/api', userRoutes)
 // app.use('/api', profileRoutes);
 
 const PORT = process.env.PORT || 3000;
