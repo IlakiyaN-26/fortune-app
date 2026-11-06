@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h2>User Details</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>User Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let user of users; let i = index">
+
+        <td>{{ i + 1 }}</td>
+
+        <td>{{ user.name }}</td>
+
+        <td>{{ user.email }}</td>
+
+      </tr>
+
+      <tr *ngIf="users.length === 0">
+        <td colspan="3">No users found</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>

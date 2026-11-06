@@ -9,8 +9,8 @@ import { environmentProd } from 'environment.prod'
 })
 export class AuthService {
 
-  // private apiUrl = 'http://localhost:3000/api';
-    private apiUrl = environmentProd.apiUrl || environment.apiUrl;
+  private apiUrl = 'http://localhost:3000/api';
+  //  private apiUrl = environmentProd.apiUrl || environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 

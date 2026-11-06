@@ -13,6 +13,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { AuthChoiceComponent } from './auth-choice/auth-choice.component';
 import { AuthInterceptor } from './auth.interceptor';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AuthInterceptor } from './auth.interceptor';
     ProfileComponent,
     SignupComponent,
     HomeComponent,
-    AuthChoiceComponent
+    AuthChoiceComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

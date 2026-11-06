@@ -1,3 +1,106 @@
+// :host {
+//   display: block;
+//   min-height: 100vh;
+//   background: linear-gradient(135deg, #5d0040, #764ba2);
+// }
+
+// /* Main container */
+// .home-container {
+//   min-height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 2rem;
+//   position: relative;
+// }
+
+// /* Fortune Card */
+// .fortune-card {
+//   width: 100%;
+//   max-width: 24rem;
+//   padding: 2rem;
+//   border-radius: 1.2rem;
+//   background: rgba(255, 255, 255, 0.15);
+//   backdrop-filter: blur(1rem);
+//   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+//   text-align: center;
+//   color: #ffffff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+
+// }
+
+// /* Headings */
+// .fortune-card h2 {
+//   font-size: 1.3rem;
+//   // margin-bottom: 0.2rem;
+// }
+
+// .fortune-card h3 {
+//   font-size: 1rem;
+//   margin-bottom: 1.5rem;
+//   opacity: 0.9;
+// }
+
+// .fortune-card p {
+//   font-size: 0.95rem;
+//   margin-bottom: 1.5rem;
+//   line-height: 1.4;
+// }
+
+// /* Generate Button */
+// // .fortune-card button {
+// //   width: auto;
+// //   padding: 0.8rem 1.5rem;  border-radius: 0.6rem;
+// //   border: none;
+// //   font-size: 0.9rem;
+// //   font-weight: 600;
+// //   background: #ffffff;
+// //   color: #5d0040;
+// //   cursor: pointer;
+// //   transition: 0.3s ease;
+// // }
+
+// .fortune-btn{
+//   transform: translateY(-0.15rem);
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+// }
+
+// /* Logout Button */
+// .logout-btn{
+//   position: absolute;
+//   bottom: 2rem;
+//   right: 2rem;
+//   padding: 0.6rem 1.2rem;
+//   border-radius: 0.6rem;
+//   border: none;
+//   background: rgba(255, 255, 255, 0.2);
+//   color: #fff;
+//   font-size: 0.8rem;
+//   cursor: pointer;
+//   transition: 0.3s ease;
+// }
+
+// .logout-btn{
+//   background: rgba(255, 255, 255, 0.35);
+// }
+// .fortune-btn {
+//   display: block;
+//   margin: 1.5rem auto 0 auto; /* centers horizontally */
+//   padding: 0.8rem 1.5rem;
+//   border-radius: 0.6rem;
+//   border: none;
+//   font-size: 0.9rem;
+//   font-weight: 600;
+//   background: #ffffff;
+//   color: #5d0040;
+//   cursor: pointer;
+//   transition: 0.3s ease;
+// }
+
+
 :host {
   display: block;
   min-height: 100vh;
@@ -28,14 +131,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 /* Headings */
 .fortune-card h2 {
   font-size: 1.3rem;
-  // margin-bottom: 0.2rem;
 }
 
 .fortune-card h3 {
@@ -50,45 +150,10 @@
   line-height: 1.4;
 }
 
-/* Generate Button */
-// .fortune-card button {
-//   width: auto;
-//   padding: 0.8rem 1.5rem;  border-radius: 0.6rem;
-//   border: none;
-//   font-size: 0.9rem;
-//   font-weight: 600;
-//   background: #ffffff;
-//   color: #5d0040;
-//   cursor: pointer;
-//   transition: 0.3s ease;
-// }
-
-.fortune-btn{
-  transform: translateY(-0.15rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-}
-
-/* Logout Button */
-.logout-btn{
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.6rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.logout-btn{
-  background: rgba(255, 255, 255, 0.35);
-}
+/* Fortune Button */
 .fortune-btn {
   display: block;
-  margin: 1.5rem auto 0 auto; /* centers horizontally */
+  margin: 1.5rem auto 0 auto;
   padding: 0.8rem 1.5rem;
   border-radius: 0.6rem;
   border: none;
@@ -98,4 +163,70 @@
   color: #5d0040;
   cursor: pointer;
   transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* User Details Button */
+.user-details-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-0.15rem);
+  }
+}
+
+/* Logout Button */
+.logout-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-0.15rem);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .user-details-btn {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .logout-btn {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .home-container {
+    padding: 1rem;
+  }
+
+  .fortune-card {
+    padding: 1.5rem;
+  }
 }

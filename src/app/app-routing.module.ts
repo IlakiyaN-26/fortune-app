@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AuthChoiceComponent } from './auth-choice/auth-choice.component';
+import { UserDetailsComponent} from './user-details/user-details.component';
 
 const routes: Routes = [
   // Default page (Login / Signup choice)
@@ -21,6 +22,7 @@ const routes: Routes = [
 
   // Home page (after login/signup)
   { path: 'home', component: HomeComponent, canActivate: [authGuard] },
+  { path: 'user-details',  component: UserDetailsComponent },
 
   // Optional: redirect unknown routes
   { path: '**', redirectTo: '' }
